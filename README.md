@@ -10,7 +10,7 @@
 ## ✨ 核心特性
 
 - **极致小巧**：静态编译后的二进制文件约 **46KB**(arm-musl)，加上脚本共**49KB**，完美适配闪存极小的设备。
-- **零依赖**：不需要 Python 运行时，仅依赖 `curl` 即可实现秒级重连。
+- **超低依赖**：不需要 Python 运行时，仅依赖 `curl` 即可实现秒级重连。
 ---
 
 ## 🛠️ 编译与部署
@@ -31,7 +31,7 @@ tar -xf arm-linux-musleabi-cross.tgz
 make CC=arm-linux-musleabi-cross/bin/arm-linux-musleabi-cc
 ```
 
-### 二、 部署到路由器
+### 二、 部署到设备
 1. 将编译好的 `srun_crypto`(位于`build/`) 放入 `/usr/bin/`(默认`/usr/bin/`添加到`PATH`)
 2. 将 `srun_login.sh` 放入你自己的目录(例如`~/`)。
 3. 修改`srun_login.sh`内的`USER_ID`和`PASSWORD`字段
